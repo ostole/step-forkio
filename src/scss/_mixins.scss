@@ -1,0 +1,23 @@
+
+@mixin text-decoration ($font-size, $line-hight, $font-weight, $color) {
+  font-size: $font-size;
+  line-height: $line-hight;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+
+@mixin button($bgc,$borc,$fontColor,$bgh,$fontColorH){
+  border-radius: 25px;
+  border: 1px solid transparent;
+  outline: none;
+  transition: color 0.3s linear;
+  color: $fontColor;
+  background-color: $bgc;
+  cursor: pointer;
+  &:hover{
+    border-color: $borc;
+    background-color: $bgh;
+    color: $fontColorH;
+  }
+}

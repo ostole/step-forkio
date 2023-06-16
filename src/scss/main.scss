@@ -1,0 +1,13 @@
+@import "_mixins.scss";
+@import "_vars.scss";
+@import "reset.scss";
+@import "revolut.scss";
+@import "youget.scss";
+@import "price.scss";
+//@import "advantages-section.scss";
+.container {
+  padding: 0 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+

@@ -1,0 +1,153 @@
+.pricing {
+  padding-top: 60px;
+  padding-bottom: 79px;
+  background: url("../img/pricing-bg.png") ;
+  background-size: cover;
+  font-family: 'Monserat';
+  text-align: center;
+  color: #fff;
+
+  &__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  &__variant {
+    display: inline-block;
+    width: 257px;
+    padding-bottom: 38px;
+    margin-bottom: 14px;
+    background-color: rgba(255, 255, 255, .2);
+  }
+
+  &__variant-name {
+    padding-top: 46px;
+    padding-bottom: 36px;
+    margin-bottom: 36px;
+    background-color: rgba(255, 255, 255, .05);
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  &__price {
+    font-size: 56px;
+    font-weight: 700;
+  }
+
+  &__price:before { content: '\0024'; }
+  &__price:after {
+    content: 'per month';
+    display: block;
+    margin: 24px 39px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: .3;
+  }
+
+  &__variant-desc {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    height: 50px;
+    //font-size: 16px;
+    padding: 0 22px;
+    margin-bottom: 68px;
+    //line-height: 1.2;
+  }
+
+  &__variant-desc:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    margin: 0 auto 31px;
+    background-color: #8d81ac;
+  }
+
+  &__variant-btn {
+    display: inline-block;
+    border-radius: 25px;
+    padding: 16px 38px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    outline: none;
+    transition: color 0.3s linear;
+    background-color:rgba(255, 255, 255, .05);
+    cursor: pointer;
+    &:hover {
+      border-color: #8d81ac;
+      background-color: #fff;
+      color: #8d81ac;
+    }
+  }
+
+  &__variant.active {
+    margin: 40px 0;
+    background-color: rgba(0, 0, 0, .15);
+    transform: scale(1.1);
+
+    .pricing__variant-name {
+      background-color: rgba(0, 0, 0, .05);
+      color: rgba(255, 255, 255, .8);
+    }
+  }
+
+}
+@media (min-width: 481px){
+  .pricing {
+    display: flex;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    &__title {
+      width: 100%;
+      font-size: 42px;
+      line-height: 44px;
+    }
+
+    &__variant {
+      width: 38%;
+      margin: 39px 23px 92px;
+    }
+
+    &__variant.active {
+      transform: scale(1.2);
+      margin: 0 23px 92px;
+    }
+  }
+}
+@media (min-width: 980px) {
+  .pricing {
+    //max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+
+    &__title {
+      margin-bottom: 121px;
+      font-size: 48px;
+      line-height: 50px;
+    }
+
+    &__variant {
+      width: 19%;
+      margin: 0 7px;
+    }
+
+    &__variant.active {
+      margin: 0 25px;
+    }
+  }
+}
+
